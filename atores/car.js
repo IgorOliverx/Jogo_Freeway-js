@@ -1,12 +1,11 @@
-//car1
-xCar1 = 599;
-xCar2 = 599;
-xCar3 = 599;
-xCar4 = 599;
-yCar1 = 40;
-yCar2 = 150;
-yCar3 = 210;
-yCar4 = 320;
+
+//O código poderia estar um pouco mais organizado, usando mais arrays e laços.
+
+
+let xCarros = [598,599,597,596];
+let yCarros = [40,150,210,320];
+
+
 wCar = 50;
 hCar = 40;
 
@@ -15,33 +14,48 @@ velCar2 = 6;
 velCar3 = 7;
 velCar4 = 8;
 
-let parar = 1;
 
 
 function movimentaCar1() {
-    xCar1 -= velCar1;
-    if(xCar1 < - 30){
-        xCar1 = 599;
+    xCarros[0] -= velCar1;
+    if(xCarros[0] < - 30){
+        xCarros[0] = 599;
     }
 }
 
 function movimentaCar2() {
-    xCar2 -= velCar2;
-    if(xCar2 < - 30){
-        xCar2 = 599;
+    xCarros[1] -= velCar2;
+    if(xCarros[1] < - 30){
+        xCarros[1] = 599;
     }
 }
 
 function movimentaCar3() {
-    xCar3 -= velCar3;
-    if(xCar3 < - 30){
-        xCar3 = 599;
+    xCarros[2] -= velCar3;
+    if(xCarros[2] < - 30){
+        xCarros[2] = 599;
     }
 }
 
 function movimentaCar4() {
-    xCar4 -= velCar4;
-    if(xCar4 < - 30){
-        xCar4 = 599;
+    xCarros[3] -= velCar4;
+    if(xCarros[3] < - 30){
+        xCarros[3] = 599;
     }
+}
+
+function movimentoCarros(){
+    movimentaCar1();
+    movimentaCar2();
+    movimentaCar3();
+    movimentaCar4();
+}
+
+
+function mostrarCar() {
+
+    for(let i=0; i<imagemCarros.length; i++) {
+  image(imagemCarros[i], xCarros[i],yCarros[i],wCar,hCar);
+}
+
 }
