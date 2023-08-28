@@ -4,7 +4,7 @@ let ator;
 
 
 function setup() {
-  createCanvas(500, 400);
+  createCanvas(620, 350);
 }
 
 function draw() {
@@ -15,6 +15,7 @@ function draw() {
   mostrarCar();
   movimentoCarros();
   gameWin();
+
 }
 
 
@@ -25,6 +26,7 @@ carro1 = loadImage("imgs/carro-3.png");
 carro2 = loadImage("imgs/carro-2.png");
 carro3 = loadImage("imgs/carro-1.png");
 carro4 = loadImage("imgs/carro-2.png");
+loadWin = loadImage("imgs/you.jpg")
 imagemCarros = [carro1,carro2,carro3,carro4];
 }
 

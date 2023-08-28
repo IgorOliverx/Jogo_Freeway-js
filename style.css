@@ -1,8 +1,49 @@
 html, body {
     margin: 0;
     padding: 0;
+    background-image: url(imgs/rr.png);
   }
   canvas {
     display: block;
   }
+
+
+.restart {
+background-color: blue;
+height: 30px;
+width: 100px;
+
+}
+
+.container {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  margin-left: 377px;
+  justify-content: center;
+  position: relative;
+  top: 205px;
+}
+
+.btnn {
+  background-color: blue;
+  border: none;
+  border-radius: 5px ;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  color: white;
+}
+.btnn:hover {
+  background-color: #0000CD;
+  color: white;
+  box-shadow: 0 5px 0 #00008B;
+}
+.btnn:active {
+  box-shadow: none;
+  position: relative;
+  top: 5px;
   
+}
+

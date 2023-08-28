@@ -4,7 +4,7 @@ let colisao = false;
 
 //variáveis do ator
 xAtor = 100;
-yAtor = 366;
+yAtor = 320;
 wAtor = 30;
 hAtor = 30;
 
@@ -22,7 +22,7 @@ function verificaColisao() {
     for(let i=0; i < imagemCarros.length; i++) {
        colisao = collideRectCircle(xCarros[i], yCarros[i], wCar, hCar, xAtor, yAtor, 12);
        if(colisao) {
-        yAtor = 366;
+        yAtor = 320;
         xAtor = 100;
        }
    }
@@ -31,7 +31,8 @@ function verificaColisao() {
 
 function gameWin() {
     
-    if(yAtor == 10) {
-        print("Voce Ganhou!")
+    if(yAtor < 4) {
+        background(loadWin);
+        
     }
 }
